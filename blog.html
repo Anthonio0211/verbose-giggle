@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jquery link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <!-- font awesome link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="STATIC/css/owl.carousel.css">
+    <script src="STATIC/js/owl.carousel.js"></script>
+   <link rel="stylesheet" href="STATIC/css/blog.css">
+   <link rel="stylesheet" href="STATIC/css/main.css">
+   <!-- chatbox -->
+   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f497c9d-eae9-4d1a-a528-a7c4d6cf664d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!-- aos animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos animate -->
+   <title>PRECISION INDUSTIRAL EQUIPMENT AND TOOLS</title>
+    <link rel="shortcut icon" href="STATIC/Images/logo2.png" type="image/x-icon" >
+  </head>
+  <body>
+     <!-- pop-up modal -->
+    <!-- <div class="row justify justify-content-center" >
+    <div class="col-12 col-lg-9 col-xl-8" id="pop" data-aos="zoom-in">
+        <form class="">
+            <div class="card" id="card" >
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-11">
+                        <div class="row mt-0">
+                            <div class="col-md-12 ">
+                                <h4 class="text-center heading">get 10% off</h4>
+                                <p class="text-center sub-heading">subscribe to our newsletter & receive a coupon</p>
+                            </div>
+                            <div class="div exit" id="close">
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-md-12 mb-0"> <input id="e-mail" type="text" placeholder="ENTER YOUR EMAIL" name="email" class="form-control input-box rm-border text-center"> </div>
+                        </div>
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-12 px-3"> 
+                              <input type="submit" value="GET IT NOW!" class="btn btn-block btn-black rm-border exit"> 
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-md-12 px-3 mt-4"> <a href="#">
+                                    <p class="thanks exit" >no thanks</p>
+                                </a> </div>
+                        </div>
+                        <div class="note row justify-content-center ">
+                            <div class="col-md-12 px-3">
+                                <p class="conditions ">*  &#x20A6 50000 minimum purchase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>  -->
+<!-- pop-up modal end -->
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light  " style="position: sticky; top: 0; z-index: 1500;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="STATIC/Images/logo2.png" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productpage.html">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqpage.html">faq</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <!-- cart -->
+           <div class="cart01 mt-2 mx-2">
+             <button type="button" id="cart-btn" onclick="opencart()">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span id="cart-count">0</span>
+             </button>
+         <div id="cart-container">
+      
+            
+             <div id="cart-total">
+              <h3>Total: &#x20A6<span>0</span>.00</h3></h3>
+             </div>
+           
+         </div>
+
+
+
+           </div>
+          <!-- cart end -->
+          <button class="button mx-3 custom-btn btn-15 "> contact us</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    
+      <div class="band mt-5">
+        <div class="item-1">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(./STATIC/Images/blog-4.jpg);"></div>
+            <article>
+              <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus nobis, reiciendis... </h1>
+              <p>read more</p>
+              <span>5th Of May 2021</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-2">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(.//STATIC/Images/blog-5.jpg);"></div>
+            <article>
+              <h1>How to Conduct Remote Usability Testing</h1>
+              <span>8th Of June 2019</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-3">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(./STATIC/Images/1.jpg);"></div>
+            <article>
+              <h1>Benefits Of Safety Tools</h1>
+              <p>Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community! </p>
+              <span> 11th Of February 2021</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-4">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(./STATIC/Images/welder.jpg);"></div>
+            <article>
+              <h1>How to Code a Scrolling “Alien Lander” Website</h1>
+              <p>We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander” making its way to touch down.</p>
+              <span>Kezz Bracey</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-5">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(./STATIC/Images/blog-02.jpg);"></div>
+            <article>
+              <h1>How to Create a “Stranger Things” Text Effect in Adobe Photoshop</h1>
+              <span>Rose</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-6">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(./STATIC/Images/2.jpg);"></div>
+            <article>
+              <h1>5 Inspirational Business Portraits and How to Make Your Own</h1>
+      
+              <span>9th October 2015</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-7">
+          <a href="#" class="card">
+            <div class="thumb" style="background-image: url(./STATIC/Images/clean.jpg);"></div>
+            <article>
+              <h1>Notes From Behind the Firewall: The State of Web Design in China</h1>
+              <span>Kendra Schaefer</span>
+            </article>
+          </a>
+        </div>
+      </div>
+ 
+<!-- footer -->
+<section class="row" id="footer">
+  <div class="col-lg-4 col-md-12 col-sm-12  align-items-center mt-5" style="height: 300px; " id="socials">
+    <div class="col-12 social-info">
+      <h3>PRECISION</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit rerum in aliq</p>
+    </div>
+    <ul >
+      <li> <span class="infos"><i class="fa fa-envelope" aria-hidden="true"></i></span> &nbsp;<p class="d-inline">anthonioolamide@gmail.com</p></li>
+      <li> <span class="infos"><i class="fa fa-phone" aria-hidden="true"></i> </span>&nbsp; <p class="d-inline">08109771827</p></li>
+      <li> <span class="infos"> <i class="fa fa-map-marker px-1" aria-hidden="true"></i></span> </i>&nbsp;<p class="d-inline"> plt 24, unity avenue gasline,ijoko</p> </li>
+    </ul>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12  align-items-center text-start mt-1"  style="height: 300px;" id="useful-links">
+<div class="col-12 mt-5 mx-5">
+  <h3 >Useful Links</h3>
+</div>
+ <div class="row mx-auto">
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+ </div>
+  </div>
+  <div class="col-lg-4   col-md-12 col-sm-12 mt-5  mx-auto" style="height: 300px;" id="newsletter">
+    <div class="col-12 text-start mt-1 ">
+      <h3>Newsletter</h3>
+      <p style="margin-left: 20px;">You can be always up to date with our company news!</p>
+    </div>
+ <div class="col-11">
+  <div class="input-group my-5" style="margin-left: 20px;">
+    <input type="email" class="form-control newsl" placeholder="EMAIL" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">SUBSCRIBE</span>
+</div>
+ </div>
+ <div class="col-12 text-start" style="margin-left: 30px;">
+   Useful links
+ </div>
+   <div class="row">
+    <div class="icon" >
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+     
+    </div>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  <div class="col-12 p-2 mt-2 ">
+    <h6 class="text-center m-2"> COPYRIGHT &copy; 2021- Precision - All right reserved </h6>
+
+   </div>
+   <div class="col-12 d-flex justify-content-center">
+     <img src="STATIC/Images/payment.png" alt="" class="mx-auto">
+   </div>
+</section>
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<!-- <section class="row" id="footer">
+  <div class="col-lg-4 col-md-12 col-sm-12  align-items-center mt-5" style="height: 300px; " id="socials">
+    <div class="col-12 social-info">
+      <h3>PRECISION</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit rerum in aliq</p>
+    </div>
+    <ul >
+      <li> <span class="infos"><i class="fa fa-envelope" aria-hidden="true"></i></span> &nbsp;<p class="d-inline">anthonioolamide@gmail.com</p></li>
+      <li> <span class="infos"><i class="fa fa-phone" aria-hidden="true"></i> </span>&nbsp; <p class="d-inline">08109771827</p></li>
+      <li> <span class="infos"> <i class="fa fa-map-marker px-1" aria-hidden="true"></i></span> </i>&nbsp;<p class="d-inline"> plt 24, unity avenue gasline,ijoko</p> </li>
+    </ul>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12  align-items-center text-start mt-1"  style="height: 300px;" id="useful-links">
+<div class="col-12 mt-5 mx-5">
+  <h3 >Useful Links</h3>
+</div>
+ <div class="row mx-auto">
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+ </div>
+  </div>
+  <div class="col-lg-4   col-md-12 col-sm-12 mt-5  mx-auto" style="height: 300px;" id="newsletter">
+    <div class="col-12 text-start mt-1 ">
+      <h3>Newsletter</h3>
+      <p style="margin-left: 20px;">You can be always up to date with our company news!</p>
+    </div>
+ <div class="col-11">
+  <div class="input-group my-5" style="margin-left: 20px;">
+    <input type="email" class="form-control newsl" placeholder="EMAIL" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">SUBSCRIBE</span>
+</div>
+ </div>
+ <div class="col-12 text-start" style="margin-left: 30px;">
+   Useful links
+ </div>
+   <div class="row">
+    <div class="icon" >
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+     
+    </div>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  <div class="col-12 p-2 mt-2 ">
+    <h6 class="text-center m-2"> COPYRIGHT &copy; 2021- Precision - All right reserved </h6>
+
+   </div>
+   <div class="col-12 d-flex justify-content-center">
+     <img src="STATIC/Images/payment.png" alt="" class="mx-auto">
+   </div>
+</section> -->
+<!-- footer end -->
+
+
+
+
+
+
+<script src="STATIC/js/index.js"></script>
+<script src="STATIC/js/service.js"></script>
+
+
+
+
+ 
+<!-- <script>
+  AOS.init();
+</script> -->
+ 
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- font awesome link  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- css links -->
+<link rel="stylesheet" href="STATIC/css/main.css">
+ <!-- chatbox -->
+   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f497c9d-eae9-4d1a-a528-a7c4d6cf664d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+   <!-- jquery link -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+<link rel="shortcut icon" href="STATIC/Images/logo2.png" type="image/x-icon">
+    <title>FAQ</title>
+    <style>
+        .faq h1{
+            font-size: 3.2em;
+            color: white;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        .faq{
+         position: absolute;
+         top: 30%;
+         height: 20%;
+         width: 80%;
+         text-align: center;
+         left: 12%;
+         /* transform: translate(-50% -50%); */
+        }
+        .accordion-button-active-color{
+            outline: none !important ;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light  " style="position: sticky; top: 0; z-index: 1500;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="STATIC/Images/logo2.png" alt="" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html/#services">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productpage.html">products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqpage.html">faq</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+               <!-- cart -->
+           <div class="cart01 mt-2 mx-2">
+            <button type="button" id="cart-btn" onclick="opencart()">
+             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+             <span id="cart-count">0</span>
+            </button>
+        <div id="cart-container">
+     
+           
+            <div id="cart-total">
+             <h3>Total: &#x20A6<span>0</span>.00</h3></h3>
+            </div>
+          
+        </div>
+
+
+
+          </div>
+         <!-- cart end -->
+            <button class="button mx-3 custom-btn btn-15 "> contact us</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<div class="row" style="background-image: url('./STATIC/Images/faq.jpg'); height: 450px; background-position: center; background-size: cover; background-repeat: no-repeat; background-blend-mode: darken; background-color: rgba(0, 0, 0, .6);">
+   <div class="col-12 faq">
+    <h1 class=" text-light" >frequently asked questions</h1>
+   </div>
+</div>
+ <div class="row">
+     <div class="col-9 mx-auto my-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  HOW DO I PLACE AN ORDER 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Once you have found your preferred product, just follow the steps below: – Select the product, click on ADD TO CART to add the product into your cart. – Click on view My Cart and checkout tab to complete your order process. – At checkout, you will need to fill in your personal details and shipping address if you are a new customer. – Click on proceed to checkout to fill in your billing information and choose your preferred payment options. If you encounter any problems while placing your order, do not hesitate to contact us on +2349073883052 or email us at sales@relkart.com
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  CAN FIND THE PRODUCT YOU WANT?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  HOW DO I PAY FOR AN ORDER
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                    HOW LONG DOES IT TAKE TO GET MY PACKAGE
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    HOW DO I TRACK MY ORDER
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    Accordion Item #6
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+          </div>
+     </div>
+ </div>
+
+
+
+<!-- footer -->
+<section class="row" id="footer">
+  <div class="col-lg-4 col-md-12 col-sm-12  align-items-center mt-5" style="height: 300px; " id="socials">
+    <div class="col-12 social-info">
+      <h3>PRECISION</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit rerum in aliq</p>
+    </div>
+    <ul >
+      <li> <span class="infos"><i class="fa fa-envelope" aria-hidden="true"></i></span> &nbsp;<p class="d-inline">anthonioolamide@gmail.com</p></li>
+      <li> <span class="infos"><i class="fa fa-phone" aria-hidden="true"></i> </span>&nbsp; <p class="d-inline">08109771827</p></li>
+      <li> <span class="infos"> <i class="fa fa-map-marker px-1" aria-hidden="true"></i></span> </i>&nbsp;<p class="d-inline"> plt 24, unity avenue gasline,ijoko</p> </li>
+    </ul>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12  align-items-center text-start mt-1"  style="height: 300px;" id="useful-links">
+<div class="col-12 mt-5 mx-5">
+  <h3 >Useful Links</h3>
+</div>
+ <div class="row mx-auto">
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+ </div>
+  </div>
+  <div class="col-lg-4   col-md-12 col-sm-12 mt-5  mx-auto" style="height: 300px;" id="newsletter">
+    <div class="col-12 text-start mt-1 ">
+      <h3>Newsletter</h3>
+      <p style="margin-left: 20px;">You can be always up to date with our company news!</p>
+    </div>
+ <div class="col-11">
+  <div class="input-group my-5" style="margin-left: 20px;">
+    <input type="email" class="form-control newsl" placeholder="EMAIL" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">SUBSCRIBE</span>
+</div>
+ </div>
+ <div class="col-12 text-start" style="margin-left: 30px;">
+   Useful links
+ </div>
+   <div class="row">
+    <div class="icon" >
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+     
+    </div>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  <div class="col-12 p-2 mt-2 ">
+    <h6 class="text-center m-2"> COPYRIGHT &copy; 2021- Precision - All right reserved </h6>
+
+   </div>
+   <div class="col-12 d-flex justify-content-center">
+     <img src="STATIC/Images/payment.png" alt="" class="mx-auto">
+   </div>
+</section>
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/STATIC/js/index.js"></script>
+
+       <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+   
+</body>
+</html>

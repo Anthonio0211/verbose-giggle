@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jquery link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <!-- font awesome link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="STATIC/css/owl.carousel.css">
+    <script src="STATIC/js/owl.carousel.js"></script>
+   <link rel="stylesheet" href="STATIC/css/main.css">
+   <!-- chatbox -->
+   <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f497c9d-eae9-4d1a-a528-a7c4d6cf664d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+    <!-- aos animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos animate -->
+   <title>PRECISION INDUSTIRAL EQUIPMENT AND TOOLS</title>
+    <link rel="shortcut icon" href="STATIC/Images/logo2.png" type="image/x-icon" >
+  </head>
+  <body>
+     <!-- pop-up modal -->
+     <!-- <div class="row justify justify-content-center" >
+    <div class="col-12 col-lg-9 col-xl-8" id="pop" data-aos="zoom-in">
+        <form class="">
+            <div class="card" id="card" >
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-11">
+                        <div class="row mt-0">
+                            <div class="col-md-12 ">
+                                <h4 class="text-center heading">get 10% off</h4>
+                                <p class="text-center sub-heading">subscribe to our newsletter & receive a coupon</p>
+                            </div>
+                            <div class="div exit" id="close">
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-md-12 mb-0"> <input id="e-mail" type="text" placeholder="ENTER YOUR EMAIL" name="email" class="form-control input-box rm-border text-center"> </div>
+                        </div>
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-12 px-3"> 
+                              <input type="submit" value="GET IT NOW!" class="btn btn-block btn-black rm-border exit"> 
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-md-12 px-3 mt-4"> <a href="#">
+                                    <p class="thanks exit" >no thanks</p>
+                                </a> </div>
+                        </div>
+                        <div class="note row justify-content-center ">
+                            <div class="col-md-12 px-3">
+                                <p class="conditions ">*  &#x20A6 50000 minimum purchase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>   -->
+<!-- pop-up modal end -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top " >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="STATIC/Images/logo2.png" alt="" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productpage.html">products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqpage.html">faq</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <!-- cart -->
+           <div class="cart01 mt-2 mx-2">
+             <button type="button" id="cart-btn" onclick="opencart()">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span id="cart-count">0</span>
+             </button>
+         <div id="cart-container" style="height: 100vh !important;">
+      
+            
+             <div id="cart-total">
+              <h3>Total: &#x20A6<span>0</span>.00</h3></h3>
+             </div>
+           
+         </div>
+
+
+
+           </div>
+          <!-- cart end -->
+          <button class="button mx-3 custom-btn btn-15 "> contact us</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+ 
+   <!-- banner -->
+   <div id="banner">
+   <div id="description">
+    <h1 id="changeh1" >find machines and tools near you </h1>
+    <h5 id="changep"> Explore readily available equipment and power solutions for your applications,
+      supported by our world-class services.</h5>
+      <button class="button mx-3 custom-btn btn-16 px-2" id="changebtn"> shop now</button>
+  </div>
+   </div>
+   <!-- banner end -->
+   
+<!-- advert -->
+<article class="d-none d-lg-block">
+  <div class="cont  " >
+    <div class="box1">
+     <img src="STATIC/Images/banner-04.jpg" alt="">
+     <div class="overlay">
+       <h1>Power Beyond <br> Belive</h1>
+       <h5>Performance of gas without the noise, <br> fuss & fumes</h5>
+       <button class="btn btn-outline-light my-4"> Shop Now</button>
+     </div>
+    </div>
+    <div class="box2 ">
+      <img src="STATIC/Images/banner-05.jpg" alt="">
+      <div class="overlay2">
+        <h1>One battery</h1>
+        <h5>Infinite Possibilities</h5>
+        <button class="btn btn-outline-dark my-3"> Shop Now</button>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- advert -->
+  
+
+<!-- our services -->
+<div id="services" class="row d-flex align-items-center py-4 pb-5  mx-3" style="margin: 100px 0px;" >
+<div class="col-lg-12 col-md-12 col-sm-12 ">
+  <div class="col-12 my-5 text-center">
+    <h1 class="mx-auto promise ">our promise to you
+     </h1>
+
+  </div>
+</div>
+    <!-- service row -->
+    <div class="row ">
+      <!-- service column 1 -->
+      <div class="col-lg-4 col-md-12 col-12">
+        <!-- quality -->
+       <div class="cube1 col-7" id="q1" onclick="quality()">
+        <div class="service-1">
+          <h5 class="d-inline mx-3">Quality and Reliability </h5>
+          <img src="STATIC/Images/quality1.png" alt="" width="50" height="50">
+        </div>
+       </div>
+    
+       <div class="cube2" id="quality" onclick="quality2()">
+        <div class="service-1">
+          <h5 class="d-inline mx-3">Quality and Reliability </h5>
+          <img src="STATIC/Images/quality2.png" alt="" width="50" height="50">
+        </div>
+        <h4>Tried and tested, genuine Cat products for the toughest conditions and the hardest jobs.</h4>
+      </div>
+    <!-- quality -->
+    <!-- time -->
+    <div class="cube1 col-7 py-3" id="t1" onclick="time1()">
+      <div class="service-1">
+        <h5 class="d-inline mx-3">Efficiency and Savings </h5>
+        <img src="STATIC/Images/time01.png" alt="" width="35" height="35">
+      </div>
+     </div>
+    
+     <div class="cube2" id="efficency" onclick="time2()">
+      <div class="service-1">
+        <h5 class="d-inline mx-3">Efficiency and Savings </h5>
+        <img src="STATIC/Images/time02.png" alt="" width="35" height="35">
+      </div>
+      <h4>Beneficial solutions in short time frames, for productive operations and a bigger bottom line.</h4>
+    </div>
+    <!-- time end -->
+      </div>
+       <!-- service column 1 end -->
+        <!-- service column 2 -->
+      <div class="col-lg-4 col-md-12 col-12">
+    <!-- servicing -->
+      <div class="cube1 col-7" id="s1" onclick="service1()">
+        <div class="service-1">
+          <h5 class="d-inline mx-3">Timely Service</h5>
+          <img src="STATIC/Images/tool1.png" alt="" width="50" height="50" class="mx-3">
+        </div>
+       </div>
+    
+       <div class="cube2" id="servcing" onclick="service2()">
+        <div class="service-1">
+          <h5 class="d-inline mx-3">Timely Service </h5>
+          <img src="STATIC/Images/tool2.png" alt="" width="50" height="50" class="mx-3">
+        </div>
+        <h4>On-time maintenance and repairs, so you can maximise asset lifecycles and performance for greater profitability.</h4>
+      </div>
+      <div class="cube1 col-7" id="e1" onclick="expert1()">
+        <div class="service-1">
+          <h5 class="d-inline mx-3">Expert Assistance </h5>
+          <img src="STATIC/Images/quality1.png" alt="" width="50" height="50">
+        </div>
+       </div>
+    
+       <div class="cube2" id="expert" onclick="expert2()">
+        <div class="service-1">
+          <h5 class="d-inline mx-3">Expert Assistance </h5>
+          <img src="STATIC/Images/quality2.png" alt="" width="50" height="50">
+        </div>
+        <h4>Complimentary consults with Cat-certified technicians and industry professionals, helping you achieve every operational goal.</h4>
+      </div>
+      <!-- expert -->
+      </div>
+       <!-- service column 2 end -->
+        <!-- service column 3 -->
+      <div class="col-lg-4 col-md-12 col-12">
+     <!-- inventory -->
+     <div class="cube1 col-7" id="i1" onclick="invent1()">
+      <div class="service-1">
+        <h5 class="d-inline mx-3">Ready Inventory </h5>
+        <img src="STATIC/Images/quality1.png" alt="" width="50" height="50">
+      </div>
+     </div>
+    
+     <div class="cube2" id="invent" onclick="invent2()">
+      <div class="service-1">
+        <h5 class="d-inline mx-3">Ready Inventory </h5>
+        <img src="STATIC/Images/quality2.png" alt="" width="50" height="50">
+      </div>
+      <h4>High in-territory availability across our markets of operation, so you get what you need, when and where you need it.</h4>
+    </div>
+    <!-- inventory -->
+         <!-- growth -->
+         <div class="cube1 col-7" id="g1" onclick="growth1()">
+          <div class="service-1">
+            <h5 class="d-inline mx-3">Fostering Growth </h5>
+            <img src="STATIC/Images/quality1.png" alt="" width="50" height="50">
+          </div>
+         </div>
+      
+         <div class="cube2" id="growth" onclick="growth2()">
+          <div class="service-1">
+            <h5 class="d-inline mx-3">Fostering Growth </h5>
+            <img src="STATIC/Images/quality2.png" alt="" width="50" height="50">
+          </div>
+          <h4>Product solutions and services designed to drive profitability across asset performance parameters and industry applications.</h4>
+        </div>
+        <!-- growth -->
+      </div>
+      <!-- service column 3 end -->
+    </div>
+     <!-- service row end -->
+      </div>
+<!-- our services end -->
+<!-- product -->
+<div id="products" class="row d-none d-lg-flex py-4 pb-5 " style="margin: 100px 0px;" >
+  <div class="col-12 ">
+    <h2 class="mt-5 text-center  product-head  "> our product </h2>
+  </div>
+<div class="row">
+  <div class="col-5 mx-auto">
+    <div class="product-grid">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title">DeWalt DWV010 15 Amp 8 Gallon Dust Extractor Kit</h3>
+        </div>
+        <figure class="images  ">
+          <span class="onsale">50% off</span>
+        </figure>
+      </div>
+        <div class="product-image img-container">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/bosh1.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                <li><a href="product1.html"><i class="fa fa-eye"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price"> &#x20A6 <span>40,000</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+</div>
+  <div class="col-6  row mx-auto" style="height: 500px;"  >
+<div class="col-6 ">
+  <div class="product-grid mb-4">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2">DEWALT Honda GX270</h3>
+      </div>
+      <figure class="images  ">
+        <span class="onsale">50% off</span>
+      </figure>
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/dewalt1.jpg">
+              <img class="pic-2" src="STATIC/Images/product-07-900x923.jpg">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6 <span>80000</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+  <div class="product-grid mt-3">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2">Self Levetating Lever</h3>
+      </div>
+      <figure class="images  ">
+        <span class="onsale">50% off</span>
+      </figure>
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/lever1.jpg">
+              <img class="pic-2" src="STATIC/Images/lever2.png">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6<span> 85.55</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+</div>
+<div class="col-6">
+    <div class="product-grid mb-4">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2">Drill Master 3000</h3>
+      </div>
+      <figure class="images  ">
+        <span class="onsale">50% off</span>
+      </figure>
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+              <img class="pic-2" src="STATIC/Images/product2.jpg">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6 <span>84000</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+  <div class="product-grid mt-3">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2">Power Cable DrillXD</h3>
+      </div>
+      <figure class="images  ">
+        <span class="onsale">50% off</span>
+      </figure>
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/product-07-900x923.jpg">
+              <img class="pic-2" src="STATIC/Images/powercable.png">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="far fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-eye"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6 <span>67000</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<!-- product -->
+<!-- product for medium and small screen only -->
+<div class="row d-lg-none d-md-block d-sm-block py-3" id="products">
+  <!-- product-header -->
+  <div class="col-12 my-5 nam">
+    <h2 class="mt-5 text-center product-head  "> our product </h2>
+  </div>
+  <!-- product-header end -->
+ <div class="row">
+  <div class="col-md-6 col-sm-12 ">
+    <div class="product-grid mb-4  mx-auto ">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2">Drilling rredjsh</h3>
+        </div>
+        <figure class="images  ">
+          <span class="onsale">50% off</span>
+        </figure>
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/product2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6<span> 85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2">Drilling rredjsh</h3>
+        </div>
+        <figure class="images  ">
+          <span class="onsale">50% off</span>
+        </figure>
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/product2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6<span> 85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2">Drilling rredjsh</h3>
+        </div>
+        <figure class="images  ">
+          <span class="onsale">50% off</span>
+        </figure>
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/product2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6<span> 85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2">Drilling rredjsh</h3>
+        </div>
+        <figure class="images  ">
+          <span class="onsale">50% off</span>
+        </figure>
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/product2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6<span> 85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<!-- product for medium and small screen only end -->
+<!-- brands -->
+<div class="col-12 my-5"  style="margin:  100px 0px;">
+  <h2 class="text-start trending">TRENDING BRANDS</h2>
+</div>
+<div class="row mb-5 trending-image">
+  <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center d-flex my-2 mx-auto">
+<img src="STATIC/Images/bosch-logo.png" alt="" class="img-fluid col-7">
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center d-flex my-2 mx-auto">
+    <img src="STATIC/Images/portercable.png" alt="" class="img-fluid col-7">
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center d-flex my-2 mx-auto">
+    <img src="STATIC/Images/fluke.png" alt="" class="img-fluid col-7">
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center d-flex my-2 mx-auto">
+    <img src="STATIC/Images/Karcher-Symbol.png" alt="" class="img-fluid col-7">
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center d-flex my-2 mx-auto">
+    <img src="STATIC/Images/portwest.png" alt="" class="img-fluid col-7">
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center align-items-center d-flex my-2 mx-auto">
+    <img src="STATIC/Images/dewalt.png" alt="" class="img-fluid col-7" >
+  </div>
+</div>
+
+<!-- brands -->
+<!-- TESTIMONIALS -->
+<div class="row my-5" style="margin: 100px 0px;">
+  <div class="col-12  ">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="row" >
+            <div class="col-7 text-center mx-auto">
+            <div class="testimonial-container ">
+              <div class="testimonial-image ">
+                <img src="STATIC/Images/mmm.jpg " alt="" class="mx-auto">
+              </div>
+              <div class="testimonial-text">
+                <p class="d-inline">  Great design, really clean and professional looking PSD theme. Let us bring it to life. <br> Very suitable for business topic. Everything from the detail design to the selection of mock pictures is done with a great...</p>
+              </div>
+              <div class="testimonial-name">
+                <h5>soliuid</h5>
+              </div>
+            </div>
+           
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item" >
+          <div class="row" >
+            <div class="col-7 text-center mx-auto">
+            <div class="testimonial-container ">
+              <div class="testimonial-image ">
+                <img src="STATIC/Images/mmm.jpg " alt="" class="mx-auto">
+              </div>
+              <div class="testimonial-text">
+                <p class="d-inline">  Great design, really clean and professional looking PSD theme. Let us bring it to life.&nbsp; Very suitable for business topic. Everything from the detail design to the selection of mock pictures is done with a great...</p>
+              </div>
+              <div class="testimonial-name">
+                <h5>soliuid</h5>
+              </div>
+            </div>
+           
+        </div>
+        </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+    <!-- END OF TESTIMONIALS -->
+
+
+
+<!-- blog -->
+<div class="blog row ">
+  <div class="col-12 blog-name">
+    <h1>From Our Blog</h1>
+  </div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+  <div class="card mx-auto mb-4 blog-card" >
+  <img src="STATIC/Images/clean.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">8 key differences between push lawn</h3>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="blog.html" class="btn custom-btn btn-15 ">Read more</a>
+  </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+  <div class="card mx-auto mb-4 blog-card" >
+  <img src="STATIC/Images/welder.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Bosch AKE 30 Li Cordless Chainsaw</h3>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="blog.html" class="btn custom-btn btn-15 ">Read more</a>
+  </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+  <div class="card mx-auto mb-4 blog-card" >
+  <img src="STATIC/Images/1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">How to Mow Your Lawn in Stripes?</h3>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="blog.html" class="btn custom-btn btn-15 ">Read more</a>
+  </div>
+</div>
+</div>
+</div>
+<!-- blog end -->
+<!-- footer -->
+<section class="row" id="footer">
+  <div class="col-lg-4 col-md-12 col-sm-12  align-items-center mt-5" style="height: 300px; " id="socials">
+    <div class="col-12 social-info">
+      <h3>PRECISION</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit rerum in aliq</p>
+    </div>
+    <ul >
+      <li> <span class="infos"><i class="fa fa-envelope" aria-hidden="true"></i></span> &nbsp;<p class="d-inline">anthonioolamide@gmail.com</p></li>
+      <li> <span class="infos"><i class="fa fa-phone" aria-hidden="true"></i> </span>&nbsp; <p class="d-inline">08109771827</p></li>
+      <li> <span class="infos"> <i class="fa fa-map-marker px-1" aria-hidden="true"></i></span> </i>&nbsp;<p class="d-inline"> plt 24, unity avenue gasline,ijoko</p> </li>
+    </ul>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12  align-items-center text-start mt-1"  style="height: 300px;" id="useful-links">
+<div class="col-12 mt-5 mx-5">
+  <h3 >Useful Links</h3>
+</div>
+ <div class="row mx-auto">
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+ </div>
+  </div>
+  <div class="col-lg-4   col-md-12 col-sm-12 mt-5  mx-auto" style="height: 300px;" id="newsletter">
+    <div class="col-12 text-start mt-1 ">
+      <h3>Newsletter</h3>
+      <p style="margin-left: 20px;">You can be always up to date with our company news!</p>
+    </div>
+ <div class="col-11">
+  <div class="input-group my-5" style="margin-left: 20px;">
+    <input type="email" class="form-control newsl" placeholder="EMAIL" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">SUBSCRIBE</span>
+</div>
+ </div>
+ <div class="col-12 text-start" style="margin-left: 30px;">
+   Useful links
+ </div>
+   <div class="row">
+    <div class="icon" >
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+     
+    </div>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  <div class="col-12 p-2 mt-2 ">
+    <h6 class="text-center m-2"> COPYRIGHT &copy; 2021- Precision - All right reserved </h6>
+
+   </div>
+   <div class="col-12 d-flex justify-content-center">
+     <img src="STATIC/Images/payment.png" alt="" class="mx-auto">
+   </div>
+</section>
+<!-- footer end -->
+
+
+
+
+
+
+<script src="STATIC/js/index.js"></script>
+<script src="STATIC/js/service.js"></script>
+
+
+
+
+ 
+<!-- <script>
+  AOS.init();
+</script> -->
+ 
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

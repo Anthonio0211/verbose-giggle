@@ -1,0 +1,3221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- font awesome link  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- css links -->
+<link rel="stylesheet" href="STATIC/css/main.css">
+<link rel="stylesheet" href="STATIC/css/productpage.css">
+ <!-- chatbox -->
+   <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f497c9d-eae9-4d1a-a528-a7c4d6cf664d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+   <!-- jquery link -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+<link rel="shortcut icon" href="STATIC/Images/logo2.png" type="image/x-icon">
+    <title>products</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="STATIC/Images/logo2.png" alt="" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html/#services">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productpage.html">products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqpage.html">faq</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <!-- cart -->
+           <div class="cart01 mt-2 mx-2">
+            <button type="button" id="cart-btn" onclick="opencart()">
+             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+             <span id="cart-count">0</span>
+            </button>
+        <div id="cart-container" style="height: 100vh !important;">
+     
+           
+            <div id="cart-total">
+             <h3>Total: &#x20A6<span>0</span>.00</h3></h3>
+            </div>
+          
+        </div>
+
+
+
+          </div>
+         <!-- cart end -->
+            <button class="button mx-3 custom-btn btn-15 "> contact us</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- container -->
+   <div class="row" style="margin-top: 120px;">
+    <!-- aside -->
+       <aside class="col-lg-3 col-md-12 col-sm-12 d-none d-lg-block " style="background-color: whitesmoke;">
+      <div class="row mx-3 pb-5" style="background-color: white;">
+        <div class="col-12 cate text-start ">
+          <h2 class="mx-3  ">categories</h2>
+      </div>
+      <!-- categories -->
+      <div class="categories">
+        <!-- welding equipment -->
+        <div class="categories-items"><a href="" onclick="wel()"> welding equipment</a></div>
+        <!-- welding equipment end -->
+        <!-- electrical -->
+        <div class="categories-items mx-1"><a href="#" class="sub-btn" onclick="ele()"> electrical supplies <i class="fa fa-angle-right dropdown"></i></a>
+          <!-- sub-menu -->
+          <div class="sub-menu mx-auto">
+            <a href="" class="sub-item">  wires and cables</a>
+            <a href="" class="sub-item"> pumps</a>
+            <a href="" class="sub-item"> switch and sockets</a>
+          </div>
+           <!-- sub-menu end -->
+        </div>
+        <!-- electrical end -->
+        <!-- power tools -->
+        <div class="categories-items mx-1">
+          <a href="#" class="sub-btn" onclick="pow()"> power tools <i class="fa fa-angle-right dropdown"></i></a>
+           <!-- sub-menu -->
+           <div class="sub-menu mx-auto">
+            <a href="" class="sub-item"tags-btn>  drills</a>
+            <a href="" class="sub-item"> chainsaws</a>
+            <a href="" class="sub-item"> router</a>
+          </div>
+           <!-- sub-menu end -->
+          </div>
+          <!-- power tools end -->
+          <!-- indusrial equipment -->
+        <div class="categories-items mx-1">
+          <a href="#" class="sub-btn" onclick="ind()"> industrial machines <i class="fa fa-angle-right dropdown"></i></a> 
+            <!-- sub-menu -->
+            <div class="sub-menu mx-auto">
+              <a href="#compressors" class="sub-item">  compressors</a>
+              <a href="#vices" class="sub-item"> vices</a>
+              <a href="#grinders" class="sub-item"> grinders</a>
+            </div>
+             <!-- sub-menu end -->
+        </div>
+        <!-- industrial equipment end -->
+        <!-- safety supplies -->
+        <div class="categories-items"><a href="#" onclick="safe()"> safety supplies </a></div>
+        <!-- safety supplies end -->
+        <!-- mesuring tools -->
+        <div class="categories-items"><a href="#" onclick="meas()"> measuring tools </a></div>
+        <!-- mesuring tools -->
+      </div>
+       <!-- categories end -->
+      </div>
+         <!-- popular tags -->
+         <div class="row mx-3 pb-5 pt-3 " style="background-color: white; margin-top: 100px;">
+           <div class="col-12 cate">
+             <h2 class=" mb-4">popular tags</h2>
+           </div>
+           <div class="row mt-1">
+             <div class="col-lg-3">
+              <a href="" class="btn tags-btn"> drills</a>
+             </div>
+             <div class="col-lg-3">
+              <a href="" class="btn tags-btn"> drills</a>
+             </div>
+             <div class="col-lg-3">
+              <a href="" class=" btn tags-btn"> drills</a>
+             </div>
+             <div class="col-lg-3">
+              <a href="" class="btn tags-btn"> drills</a>
+             </div>
+            
+           </div>
+           <div class="row">
+            <div class="col-lg-3">
+             <a href="" class="btn tags-btn"> drills</a>
+            </div>
+            <div class="col-lg-3">
+             <a href="" class="btn tags-btn"> drills</a>
+            </div>
+            <div class="col-lg-3">
+             <a href="" class=" btn tags-btn"> drills</a>
+            </div>
+            <div class="col-lg-3">
+             <a href="" class="btn tags-btn"> drills</a>
+            </div>
+           
+          </div>
+         </div>
+         <!-- popular tags end -->
+         <div class="col-12 mt-5">
+          <img src="STATIC/Images/banner-products.jpg" alt="" class="mx-4">
+         </div>
+      </aside>
+    <!-- aside end -->
+
+    <section class="d-none d-md-block d-sm-block d-xs-block d-lg-none">
+      <div class="row">
+        <div class="col-12 cate">
+          <h2 class="text-center">categories</h2>
+        </div>
+      </div>
+      <div class="row categories-buttons">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <button class="mx-5 my-2" onclick="wel()">welding supplies</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+         <button class="mx-5 my-2" onclick="ele()"> electrical-supplies</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <button class="mx-5 my-2" onclick="pow()"> power-tools</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <button class="mx-5 my-2" onclick="ind()">industrial-machines</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+       <button class="mx-5 my-2" onclick="safe()">   safety-supplies</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+      <button class="mx-5 my-2" onclick="meas()">measuring-tools</button>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- main -->
+       <div class="col-lg-9 col-md-12 col-sm-12   " style="height: fit-content;">
+        <!-- welding section -->
+       <div class="row" id="welding">
+        <!-- welding name -->
+        <div class="col-12 electrical mb-2">
+          <h2> welding supplies</h2>
+        </div>
+        <!-- welding name end -->
+         <!-- fixed part -->
+
+         <div class="col-12 d-flex justify-content-between p-2 mt-3 mb-4 mx-2 " style="background-color: white; ">
+          <div class="sorting">
+            <select>
+              <option value="" class="opt"> default sorting</option>
+              <option value="" class="opt"> sort by popularity</option>
+              <option value="" class="opt">sort by pricing</option>
+              <option value="" class="opt">sort by latest</option>
+              <option value="" class="opt">sort by ratings</option>
+            </select>
+          </div>
+
+          <div class="search-bar px-3 ">
+            <input type="text" placeholder="Search.." >
+          </div>
+        </div>
+        <!-- product-row 1 -->
+        <div class="row my-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Welding Machine</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/welding/PowerFlex_MIG_IGBT_Inverter_MIG_MAG_MMA_Welding_Machine_400-Fi.__35198.1502442472.jpg">
+                <img class="pic-2" src="STATIC/Images/welding/welding machine1.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>250000</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Stainless Steel Electrode</h3>
+          <figure class="images  ">
+            <span class="onsale">5% off</span>
+          </figure>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/welding/Askaynak_Electrode_E7018_Low_Hydrogen_2.50_X_350_mm_-1_Pack_5kg__94727.1564069704.jpg">
+                <img class="pic-2" src="STATIC/Images/welding/Stainless_Steel_electrode_ASKAYNAK-AS-P309L-17_5kg_pack__28367.1564255992.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>7000</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-grid mb-4 mx-1">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold"> Ralli Wolf MIG Welding Machine</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/welding/ralli wolf MIG welding machine.jpg">
+                <img class="pic-2" src="STATIC/Images/welding/ralli mig2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>230,000</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+            <div class="product-grid mb-4">
+              <div class="product-block d-flex justify-content-between">
+                <div class="product-name">
+                  <h3 class="title2 fs-5 py-3 fw-bold">Eletra EMW MIG Machine</h3>
+                </div>
+                
+              </div>
+                <div class="product-image img-container2">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="STATIC/Images/welding/eletra EMW MIG machine.jpg">
+                        <img class="pic-2" src="STATIC/Images/welding/eletra2.jpg">
+                    </a>
+                    <ul class="product-links">
+                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content d-flex justify-content-between ">
+                    <div class="info">
+                      <div class="price2"> &#x20A6 <span>250,000</span></div>
+                      <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                 <div class="cart">
+                  <i class="fa fa-shopping-cart"></i>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- product row end -->
+        <!-- product-row 2 -->
+        <div class="row  my-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Eletra EMW MIG Machine</h3>
+         </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/welding/eletra EMW MIG machine.jpg">
+              <img class="pic-2" src="STATIC/Images/welding/eletra2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>250,000</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/product2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="product-grid mb-4 mx-1">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                <img class="pic-2" src="STATIC/Images/product2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+            <div class="product-grid mb-4">
+              <div class="product-block d-flex justify-content-between">
+                <div class="product-name">
+                  <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+                </div>
+                
+              </div>
+                <div class="product-image img-container2">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                        <img class="pic-2" src="STATIC/Images/product2.jpg">
+                    </a>
+                    <ul class="product-links">
+                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#"><i class="fa fa-random"></i></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content d-flex justify-content-between ">
+                    <div class="info">
+                      <div class="price2"> &#x20A6 <span>85.55</span></div>
+                      <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                 <div class="cart">
+                  <i class="fa fa-shopping-cart"></i>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <!-- column 2 end -->
+      </div>
+      <!-- product-name 2 end -->
+       <!-- product-row 3 -->
+       <div class="row  my-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="product-grid mb-4">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+      </div>
+      
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+              <img class="pic-2" src="STATIC/Images/product2.jpg">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-random"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6 <span>85.55</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="product-grid mb-4">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+      </div>
+      
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+              <img class="pic-2" src="STATIC/Images/product2.jpg">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-random"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6 <span>85.55</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="product-grid mb-4 mx-1">
+    <div class="product-block d-flex justify-content-between">
+      <div class="product-name">
+        <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+      </div>
+      
+    </div>
+      <div class="product-image img-container2">
+          <a href="#" class="image">
+              <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+              <img class="pic-2" src="STATIC/Images/product2.jpg">
+          </a>
+          <ul class="product-links">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-random"></i></a></li>
+              <li><a href="#"><i class="fa fa-search"></i></a></li>
+          </ul>
+      </div>
+      <div class="product-content d-flex justify-content-between ">
+          <div class="info">
+            <div class="price2"> &#x20A6 <span>85.55</span></div>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+       <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+       </div>
+      </div>
+  </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+          <div class="product-grid mb-4">
+            <div class="product-block d-flex justify-content-between">
+              <div class="product-name">
+                <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+              </div>
+              
+            </div>
+              <div class="product-image img-container2">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                      <img class="pic-2" src="STATIC/Images/product2.jpg">
+                  </a>
+                  <ul class="product-links">
+                      <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                      <li><a href="#"><i class="fa fa-random"></i></a></li>
+                      <li><a href="#"><i class="fa fa-search"></i></a></li>
+                  </ul>
+              </div>
+              <div class="product-content d-flex justify-content-between ">
+                  <div class="info">
+                    <div class="price2"> &#x20A6 <span>85.55</span></div>
+                    <div class="rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+               <div class="cart">
+                <i class="fa fa-shopping-cart"></i>
+               </div>
+              </div>
+          </div>
+      </div>
+      <!-- column 2 end -->
+    </div>
+    <!-- product-name 3 end -->
+  </div>
+  <!-- welding section end -->
+   
+   <!-- electrical section -->
+   <div class="row" id="electrical-supplies">
+    <!-- eletrical name -->
+    <div class="col-12 electrical">
+      <h2> electrical supplies</h2>
+    </div>
+    <!-- eletrical name end -->
+     <!-- fixed part -->
+
+     <div class="col-12 d-flex justify-content-between p-2 my-5 " style="background-color: white";>
+      <div class="sorting">
+        <select>
+          <option value="" class="opt"> default sorting</option>
+          <option value="" class="opt"> sort by popularity</option>
+          <option value="" class="opt">sort by pricing</option>
+          <option value="" class="opt">sort by latest</option>
+          <option value="" class="opt">sort by ratings</option>
+        </select>
+      </div>
+
+      <div class="search-bar px-3">
+        <input type="text" placeholder="Search..">
+      </div>
+    </div>
+    <!-- product-row 1 -->
+    <div class="row my-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="product-grid mb-4">
+  <div class="product-block d-flex justify-content-between">
+    <div class="product-name">
+      <h3 class="title2 fs-5 py-3 fw-bold">Finolex Cable</h3>
+    </div>
+    
+  </div>
+    <div class="product-image img-container2">
+        <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/eletrical/finolex cable.jpg">
+            <img class="pic-2" src="STATIC/Images/eletrical/finolex2.jpg">
+        </a>
+        <ul class="product-links">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa fa-random"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+    <div class="product-content d-flex justify-content-between ">
+        <div class="info">
+          <div class="price2"> &#x20A6 <span>7,000</span></div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          </div>
+        </div>
+     <div class="cart">
+      <i class="fa fa-shopping-cart"></i>
+     </div>
+    </div>
+</div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="product-grid mb-4">
+  <div class="product-block d-flex justify-content-between">
+    <div class="product-name">
+      <h3 class="title2 fs-5 py-3 fw-bold">Polycab Single Core</h3>
+      <figure class="images  ">
+        <span class="onsale">5% off</span>
+      </figure>
+    </div>
+    
+  </div>
+    <div class="product-image img-container2">
+        <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/eletrical/polycab single core.jpg">
+            <img class="pic-2" src="STATIC/Images/eletrical/polycab single core2.jpg">
+        </a>
+        <ul class="product-links">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa fa-random"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+    <div class="product-content d-flex justify-content-between ">
+        <div class="info">
+          <div class="price2"> &#x20A6 <span>12,000</span></div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+     <div class="cart">
+      <i class="fa fa-shopping-cart"></i>
+     </div>
+    </div>
+</div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="product-grid mb-4 mx-1">
+  <div class="product-block d-flex justify-content-between">
+    <div class="product-name">
+      <h3 class="title2 fs-5 py-3 fw-bold">Belden Machflex Bare Cable</h3>
+    </div>
+    
+  </div>
+    <div class="product-image img-container2">
+        <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/eletrical/belden machflex bare cable.jpg">
+            <img class="pic-2" src="STATIC/Images/eletrical/bare2.jpg">
+        </a>
+        <ul class="product-links">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa fa-random"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+    <div class="product-content d-flex justify-content-between ">
+        <div class="info">
+          <div class="price2"> &#x20A6 <span>8,000</span></div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          </div>
+        </div>
+     <div class="cart">
+      <i class="fa fa-shopping-cart"></i>
+     </div>
+    </div>
+</div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+        <div class="product-grid mb-4">
+          <div class="product-block d-flex justify-content-between">
+            <div class="product-name">
+              <h3 class="title2 fs-5 py-3 fw-bold">Battery Cable</h3>
+            </div>
+            
+          </div>
+            <div class="product-image img-container2">
+                <a href="#" class="image">
+                    <img class="pic-1" src="STATIC/Images/eletrical/wire.jfif">
+                    <img class="pic-2" src="STATIC/Images/eletrical/battery cable.jfif">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content d-flex justify-content-between ">
+                <div class="info">
+                  <div class="price2"> &#x20A6 <span>11,000</span></div>
+                  <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+             <div class="cart">
+              <i class="fa fa-shopping-cart"></i>
+             </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- product row end -->
+    <!-- product-row 2 -->
+    <div class="row  my-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="product-grid mb-4">
+  <div class="product-block d-flex justify-content-between">
+    <div class="product-name">
+      <h3 class="title2 fs-5 py-3 fw-bold">Sameer Water Pump</h3>
+    </div>
+    
+  </div>
+    <div class="product-image img-container2">
+        <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/eletrical/sameer water pump.jpg">
+            <img class="pic-2" src="STATIC/Images/eletrical/sameer waterpump2.jpeg">
+        </a>
+        <ul class="product-links">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa fa-random"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+    <div class="product-content d-flex justify-content-between ">
+        <div class="info">
+          <div class="price2"> &#x20A6 <span>210,000</span></div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          </div>
+        </div>
+     <div class="cart">
+      <i class="fa fa-shopping-cart"></i>
+     </div>
+    </div>
+</div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="product-grid mb-4">
+  <div class="product-block d-flex justify-content-between">
+    <div class="product-name">
+      <h3 class="title2 fs-5 py-3 fw-bold">Jinda Single Phase Pump</h3>
+    </div>
+    
+  </div>
+    <div class="product-image img-container2">
+        <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/eletrical/jinda 1 single phase pump.jpg">
+            <img class="pic-2" src="STATIC/Images/eletrical/jindal2.jpg">
+        </a>
+        <ul class="product-links">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa fa-random"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+    <div class="product-content d-flex justify-content-between ">
+        <div class="info">
+          <div class="price2"> &#x20A6 <span>120,000</span></div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          </div>
+        </div>
+     <div class="cart">
+      <i class="fa fa-shopping-cart"></i>
+     </div>
+    </div>
+</div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="product-grid mb-4 mx-1">
+  <div class="product-block d-flex justify-content-between">
+    <div class="product-name">
+      <h3 class="title2 fs-5 py-3 fw-bold">CRI Self Priming Monoblock Pump</h3>
+    </div>
+    
+  </div>
+    <div class="product-image img-container2">
+        <a href="#" class="image">
+            <img class="pic-1" src="STATIC/Images/eletrical/cri self priming monoblock pump.jpg">
+            <img class="pic-2" src="STATIC/Images/eletrical/monoblock2.jpg">
+        </a>
+        <ul class="product-links">
+            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa fa-random"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </div>
+    <div class="product-content d-flex justify-content-between ">
+        <div class="info">
+          <div class="price2"> &#x20A6 <span>240,000</span></div>
+          <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          </div>
+        </div>
+     <div class="cart">
+      <i class="fa fa-shopping-cart"></i>
+     </div>
+    </div>
+</div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+        <div class="product-grid mb-4">
+          <div class="product-block d-flex justify-content-between">
+            <div class="product-name">
+              <h3 class="title2 fs-5 py-3 fw-bold">Damor Eco Sewage Pump</h3>
+            </div>
+            
+          </div>
+            <div class="product-image img-container2">
+                <a href="#" class="image">
+                    <img class="pic-1" src="STATIC/Images/eletrical/damor eco sewage pump.jpg">
+                    <img class="pic-2" src="STATIC/Images/eletrical/sewage2.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content d-flex justify-content-between ">
+                <div class="info">
+                  <div class="price2"> &#x20A6 <span>85.55</span></div>
+                  <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+             <div class="cart">
+              <i class="fa fa-shopping-cart"></i>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!-- column 2 end -->
+  </div>
+  <!-- product-name 2 end -->
+   <!-- product-row 3 -->
+   <div class="row  my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Legrand Fan Step Regulator</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/eletrical/MINIWOBNIIE07-large.jpg">
+          <img class="pic-2" src="STATIC/Images/eletrical/legrand fan step regulator.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>13,000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">King Angle Holder</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/eletrical/king angle holder.jpg">
+          <img class="pic-2" src="STATIC/Images/eletrical/angle2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>3,500</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/eletrical/power n pack interlock socket.jpg">
+          <img class="pic-2" src="STATIC/Images/eletrical/power n pack2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>5,500</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">power  n packk single phase socket</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/eletrical/power  n packk single phase socket.jpg">
+                  <img class="pic-2" src="STATIC/Images/eletrical/pack2.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>4,000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+  </div>
+  <!-- column 2 end -->
+</div>
+<!-- product-name 3 end -->
+</div>
+<!-- electrical section end -->
+ <!-- power tool section -->
+ <div class="row" id="power-tools">
+  <!-- power name -->
+  <div class="col-12 electrical">
+    <h2> power tools</h2>
+  </div>
+  <!-- power name end -->
+   <!-- fixed part -->
+
+   <div class="col-11 d-flex justify-content-between p-2 my-5 mx-auto " style="background-color: white";>
+    <div class="sorting">
+      <select>
+        <option value="" class="opt"> default sorting</option>
+        <option value="" class="opt"> sort by popularity</option>
+        <option value="" class="opt">sort by pricing</option>
+        <option value="" class="opt">sort by latest</option>
+        <option value="" class="opt">sort by ratings</option>
+      </select>
+    </div>
+
+    <div class="search-bar px-3">
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+  <!-- product-row 1 -->
+  <div class="row my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Stanley Percussion Drill</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/power/Stanley percussion drill.jpg">
+          <img class="pic-2" src="STATIC/Images/power/Stanley2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="product1.html"><i class="fa fa-eye"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>80000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Hi-max Drill</h3>
+    <figure class="images  ">
+      <span class="onsale">10% off</span>
+    </figure>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/power/hi-max drill.png">
+          <img class="pic-2" src="STATIC/Images/power/hi-max drill2.png">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>71000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Ralli Wolf Duty Drill</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/power/ralli wolf duty drill.jpg">
+          <img class="pic-2" src="STATIC/Images/power/ralli wolf duty drill2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>110000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">EGK Drill</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/power/egk drills.jpg">
+                  <img class="pic-2" src="STATIC/Images/power/egk drills2.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>102000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- product row end -->
+  <!-- product-row 2 -->
+  <div class="row  my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Yking Electric Chainsaw</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/power/yking electric chainsaw.jpg">
+          <img class="pic-2" src="STATIC/Images/power/yking electrical chainsaw2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>100000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">iBell Chainsaw</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/power/iBell chainsaw.jpg">
+          <img class="pic-2" src="STATIC/Images/power/iBell chainsaw2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>98000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Makita Petrol Chainsaw</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/power/makita petrol chainsaw.jpg">
+          <img class="pic-2" src="STATIC/Images/power/makita2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>90000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold"> Stihl Gasoline Chainsaw</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/power/stihl gasoline chainsaw.jpg">
+                  <img class="pic-2" src="STATIC/Images/power/stihl chainsaw2.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>91000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+  </div>
+  <!-- column 2 end -->
+</div>
+<!-- product-name 2 end -->
+ <!-- product-row 3 -->
+ <div class="row  my-4">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Makita Router</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/power/makita router.jpg">
+        <img class="pic-2" src="STATIC/Images/power/makita router2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>57000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">KEN Electric Router</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/power/KEN electric router.jpg">
+        <img class="pic-2" src="STATIC/Images/power/ken2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>82000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Prince Heavy Duty Router</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/power/prince heavy duty router.jpg">
+        <img class="pic-2" src="STATIC/Images/power/prince heavy-duty plunge router.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>85000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Sharp Gold Router</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/power/sharp gold router.jpg">
+                <img class="pic-2" src="STATIC/Images/power/sharp2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>75000</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- column 2 end -->
+</div>
+<!-- product-name 3 end -->
+</div>
+<!-- power tools section end -->
+
+ <!-- industrial machines section -->
+ <div class="row" id="industrial-machines">
+  <!-- industrial name -->
+  <div class="col-12 electrical">
+    <h2> industrial machines</h2>
+  </div>
+  <!-- indusrtial name end -->
+   <!-- fixed part -->
+
+   <div class="col-12 d-flex justify-content-between p-2 my-5 " style="background-color: white";>
+    <div class="sorting">
+      <select>
+        <option value="" class="opt"> default sorting</option>
+        <option value="" class="opt"> sort by popularity</option>
+        <option value="" class="opt">sort by pricing</option>
+        <option value="" class="opt">sort by latest</option>
+        <option value="" class="opt">sort by ratings</option>
+      </select>
+    </div>
+
+    <div class="search-bar px-3">
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+  <!-- product-row 1 -->
+  <div class="row my-4" id="compressors">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Nailing Compressor</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/industrial/compressor1.jfif">
+          <img class="pic-2" src="STATIC/Images/industrial/compressor2.jfif">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>150000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Oil Free Compressor</h3>
+    <figure class="images  ">
+      <span class="onsale">50% off</span>
+    </figure>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/industrial/oillesscompressor.jpg">
+          <img class="pic-2" src="STATIC/Images/industrial/oilfreecompressor2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>250000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Lithium-ion Compressor</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/industrial/lithium-ion compressor.jpg">
+          <img class="pic-2" src="STATIC/Images/industrial/lithium-ion compressor2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>220000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">Reciprocating Compressor</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/industrial/reciprocating aircompressor.jfif">
+                  <img class="pic-2" src="STATIC/Images/industrial/reciprocating aircompressor2.jfif">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>250000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- product row end -->
+  <!-- product-row 2 -->
+  <div class="row  my-4" id="vices">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Bench Vices</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/industrial/bench vices.jpg">
+          <img class="pic-2" src="STATIC/Images/industrial/benchvices2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>110000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Cast Iron Vices</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/industrial/cast iron vices.jpg">
+          <img class="pic-2" src="STATIC/Images/industrial/castironvices2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>120000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Apex Universal Vices</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/industrial/apex universal vices.jpg">
+          <img class="pic-2" src="STATIC/Images/industrial/apex universal vices2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>110000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">Swievel-base Vices</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/industrial/swievel base vices.jpg">
+                  <img class="pic-2" src="STATIC/Images/industrial/swievel base vices2.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>135000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+  </div>
+  <!-- column 2 end -->
+</div>
+<!-- product-name 2 end -->
+ <!-- product-row 3 -->
+ <div class="row  my-4" id="grinders">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Silencer Die Grinder</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/industrial/silencer diegrinder.jpg">
+        <img class="pic-2" src="STATIC/Images/industrial/diegrinder2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>37000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Straight Extended Grinder</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/industrial/straight extended grinder.jpg">
+        <img class="pic-2" src="STATIC/Images/industrial/straight extendedgrinder2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>56000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Bosch Angle Grinder</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/industrial/bosch angle grinder.jpg">
+        <img class="pic-2" src="STATIC/Images/industrial/boch angle grinder.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>91000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Compressed Air Die Grinder</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/industrial/compressed air die grinder.jpg">
+                <img class="pic-2" src="STATIC/Images/industrial/compressed 2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>85.55</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- column 2 end -->
+</div>
+<!-- product-name 3 end -->
+</div>
+<!-- industrial  section end -->
+
+ <!-- safety section -->
+ <div class="row" id="safety-supplies">
+  <!-- safety name -->
+  <div class="col-12 electrical">
+    <h2> safety supplies</h2>
+  </div>
+  <!-- safety name end -->
+   <!-- fixed part -->
+
+   <div class="col-12 d-flex justify-content-between p-2 my-5 " style="background-color: white";>
+    <div class="sorting">
+      <select>
+        <option value="" class="opt"> default sorting</option>
+        <option value="" class="opt"> sort by popularity</option>
+        <option value="" class="opt">sort by pricing</option>
+        <option value="" class="opt">sort by latest</option>
+        <option value="" class="opt">sort by ratings</option>
+      </select>
+    </div>
+
+    <div class="search-bar px-3">
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+  <!-- product-row 1 -->
+  <div class="row my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Safety Ladder</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/safety/5363_ladder-290x280-state_8.jpeg">
+          <img class="pic-2" src="STATIC/Images/safety/8405_Safety Cage-290x280-state_8.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>15000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Leather Safety Gloves</h3>
+    <figure class="images  ">
+      <span class="onsale">50% off</span>
+    </figure>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/safety/Cow_Split_leather_gloves_-_HGVC01__53780.1565360702.jpg">
+          <img class="pic-2" src="STATIC/Images/safety/Welding_Leather_gloves_-_INGCO_HGVW02__41935.1565359537.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>6000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Safety Gloves by Padua</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/safety/safety_hand_glove_Padua_black_hase_safety_wear__30070.1490277575.jpg">
+          <img class="pic-2" src="STATIC/Images/safety/safety_hand_glove_padua_blue_hase_safety__86513.1490279642.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>8,500</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">Nose Mask</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/safety/nosemask.jpg">
+                  <img class="pic-2" src="STATIC/Images/safety/nosemask1.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>3000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- product row end -->
+  <!-- product-row 2 -->
+  <div class="row  my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Fall Arrester</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/safety/fall-arres-system-500x500__61100.1593178345.jpg">
+                  <img class="pic-2" src="STATIC/Images/safety/fall-arrester-500x500__84814.1593179860.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>8,500</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Respiratory Mask</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/safety/respiratory mask.jpg">
+          <img class="pic-2" src="STATIC/Images/safety/respiratory mask2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>85.55</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Retractable Block</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/safety/udyogi-proton-retractable-block__48440.1593442596.jpg">
+          <img class="pic-2" src="STATIC/Images/safety/karam-mic-02-retractable-fall-arrest-block__98806.1593440179.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>85.55</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">Chemical Safety Wear</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/safety/chemicalwear.jfif">
+                  <img class="pic-2" src="STATIC/Images/safety/chemicalwear2.jfif">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>25000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+  </div>
+  <!-- column 2 end -->
+</div>
+<!-- product-name 2 end -->
+ <!-- product-row 3 -->
+ <div class="row  my-4">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Chemical Safety Wear</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+      <img class="pic-1" src="STATIC/Images/safety/chemicalwear.jfif">
+      <img class="pic-2" src="STATIC/Images/safety/chemicalwear2.jfif">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>25000</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Ear Muffs</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/safety/earmuff.jpg">
+        <img class="pic-2" src="STATIC/Images/safety/earmuff2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>9,500</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Ear Plugs</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/safety/earplug.jpg">
+        <img class="pic-2" src="STATIC/Images/safety/earplug2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 <span>5,200</span></div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Fire Nozzle</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/safety/firenose.jfif">
+                <img class="pic-2" src="STATIC/Images/safety/firenozzle.jfif">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 <span>3,300</span></div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- column 2 end -->
+</div>
+<!-- product-name 3 end -->
+</div>
+<!-- safety section end -->
+
+<!-- measuring section -->
+<div class="row" id="measuring-tools">
+  <!-- measuring name -->
+  <div class="col-12 electrical">
+    <h2> measuring tools</h2>
+  </div>
+  <!-- measuring name end -->
+   <!-- fixed part -->
+
+   <div class="col-12 d-flex justify-content-between p-2 my-5 " style="background-color: white";>
+    <div class="sorting">
+      <select>
+        <option value="" class="opt"> default sorting</option>
+        <option value="" class="opt"> sort by popularity</option>
+        <option value="" class="opt">sort by pricing</option>
+        <option value="" class="opt">sort by latest</option>
+        <option value="" class="opt">sort by ratings</option>
+      </select>
+    </div>
+
+    <div class="search-bar px-3">
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+  <!-- product-row 1 -->
+  <div class="row my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">caliberator</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/measure/caliberator.png">
+          <img class="pic-2" src="STATIC/Images/measure/cabriator2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>40000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold"> Digital Multimeter</h3>
+    <figure class="images  ">
+      <span class="onsale">50% off</span>
+    </figure>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/measure/digital multimeter.jpg">
+          <img class="pic-2" src="STATIC/Images/measure/mulimeter2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 36000</div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      <span></div>
+   <div class="c</span>art">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Sound Meter</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/measure/sound meters.jfif">
+          <img class="pic-2" src="STATIC/Images/measure/sound meter2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>70000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">Gas Detector</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/measure/gas detector.jpg">
+                  <img class="pic-2" src="STATIC/Images/measure/gas detcetor2.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 <span>78000</span></div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- product row end -->
+  <!-- product-row 2 -->
+  <div class="row  my-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Gas Detector</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/measure/gas detector.jpg">
+          <img class="pic-2" src="STATIC/Images/measure/gas detcetor2.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 <span>75000</span></div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Thermal Camera</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/measure/terminal camera.png">
+          <img class="pic-2" src="STATIC/Images/measure/Infrared_camera_with_SuperResolution_testo_875-1i_2__98361.1584618349.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 105000</div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+  <div class="product-name">
+    <h3 class="title2 fs-5 py-3 fw-bold">Tachometer</h3>
+  </div>
+  
+</div>
+  <div class="product-image img-container2">
+      <a href="#" class="image">
+          <img class="pic-1" src="STATIC/Images/measure/tachometers.jfif">
+          <img class="pic-2" src="STATIC/Images/measure/tachometer.jpg">
+      </a>
+      <ul class="product-links">
+          <li><a href="#"><i class="fa fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa fa-random"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+  </div>
+  <div class="product-content d-flex justify-content-between ">
+      <div class="info">
+        <div class="price2"> &#x20A6 85.55</div>
+        <div class="rating">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o text-muted" aria-hidden="true"></i>
+        </div>
+      </div>
+   <div class="cart">
+    <i class="fa fa-shopping-cart"></i>
+   </div>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+      <div class="product-grid mb-4">
+        <div class="product-block d-flex justify-content-between">
+          <div class="product-name">
+            <h3 class="title2 fs-5 py-3 fw-bold">Drilling rredjsh</h3>
+          </div>
+          
+        </div>
+          <div class="product-image img-container2">
+              <a href="#" class="image">
+                  <img class="pic-1" src="STATIC/Images/product3 - Copy (2).jpg">
+                  <img class="pic-2" src="STATIC/Images/product2.jpg">
+              </a>
+              <ul class="product-links">
+                  <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fa fa-random"></i></a></li>
+                  <li><a href="#"><i class="fa fa-search"></i></a></li>
+              </ul>
+          </div>
+          <div class="product-content d-flex justify-content-between ">
+              <div class="info">
+                <div class="price2"> &#x20A6 85.55</div>
+                <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+           <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+           </div>
+          </div>
+      </div>
+  </div>
+  <!-- column 2 end -->
+</div>
+<!-- product-name 2 end -->
+ <!-- product-row 3 -->
+ <div class="row  my-4">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Clamp Meter</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/measure/clamp meter.jpg">
+        <img class="pic-2" src="STATIC/Images/measure/clamp meter2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 12000</div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Pressure Guage</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/measure/pressure guage.jpg">
+        <img class="pic-2" src="STATIC/Images/measure/pressure guage2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 9,400</div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="product-grid mb-4 mx-1">
+<div class="product-block d-flex justify-content-between">
+<div class="product-name">
+  <h3 class="title2 fs-5 py-3 fw-bold">Measuring Tape</h3>
+</div>
+
+</div>
+<div class="product-image img-container2">
+    <a href="#" class="image">
+        <img class="pic-1" src="STATIC/Images/measure/measuring tape.jpg">
+        <img class="pic-2" src="STATIC/Images/measure/mesuring tape2.jpg">
+    </a>
+    <ul class="product-links">
+        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+        <li><a href="#"><i class="fa fa-random"></i></a></li>
+        <li><a href="#"><i class="fa fa-search"></i></a></li>
+    </ul>
+</div>
+<div class="product-content d-flex justify-content-between ">
+    <div class="info">
+      <div class="price2"> &#x20A6 4,000</div>
+      <div class="rating">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+    </div>
+ <div class="cart">
+  <i class="fa fa-shopping-cart"></i>
+ </div>
+</div>
+</div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 d-lg-none d-md-block d-sm-block" >
+    <div class="product-grid mb-4">
+      <div class="product-block d-flex justify-content-between">
+        <div class="product-name">
+          <h3 class="title2 fs-5 py-3 fw-bold">Caliper</h3>
+        </div>
+        
+      </div>
+        <div class="product-image img-container2">
+            <a href="#" class="image">
+                <img class="pic-1" src="STATIC/Images/measure/caliper.jpg">
+                <img class="pic-2" src="STATIC/Images/measure/caliper2.jpg">
+            </a>
+            <ul class="product-links">
+                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </div>
+        <div class="product-content d-flex justify-content-between ">
+            <div class="info">
+              <div class="price2"> &#x20A6 5,000</div>
+              <div class="rating">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+            </div>
+         <div class="cart">
+          <i class="fa fa-shopping-cart"></i>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- column 2 end -->
+</div>
+<!-- product-name 3 end -->
+</div>
+<!-- measuring section end -->
+
+</div>
+<!-- main end -->
+</div>
+<!-- container end -->
+
+
+
+
+<!-- footer -->
+<section class="row" id="footer">
+  <div class="col-lg-4 col-md-12 col-sm-12  align-items-center mt-5" style="height: 300px; " id="socials">
+    <div class="col-12 social-info">
+      <h3>PRECISION</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit rerum in aliq</p>
+    </div>
+    <ul >
+      <li> <span class="infos"><i class="fa fa-envelope" aria-hidden="true"></i></span> &nbsp;<p class="d-inline">anthonioolamide@gmail.com</p></li>
+      <li> <span class="infos"><i class="fa fa-phone" aria-hidden="true"></i> </span>&nbsp; <p class="d-inline">08109771827</p></li>
+      <li> <span class="infos"> <i class="fa fa-map-marker px-1" aria-hidden="true"></i></span> </i>&nbsp;<p class="d-inline"> plt 24, unity avenue gasline,ijoko</p> </li>
+    </ul>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12  align-items-center text-start mt-1"  style="height: 300px;" id="useful-links">
+<div class="col-12 mt-5 mx-5">
+  <h3 >Useful Links</h3>
+</div>
+ <div class="row mx-auto">
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+   <div class="col-6">
+    <ul class="navigate text-start">
+      <li><a href="#">
+    home
+      </a>
+    </li>
+      <li><a href="#">
+        about us
+      </a>
+    </li>
+      <li><a href="#">
+     admission
+      </a>
+    </li>
+      <li><a href="#">
+      news
+      </a>
+    </li>
+    </ul>
+   </div>
+ </div>
+  </div>
+  <div class="col-lg-4   col-md-12 col-sm-12 mt-5  mx-auto" style="height: 300px;" id="newsletter">
+    <div class="col-12 text-start mt-1 ">
+      <h3>Newsletter</h3>
+      <p style="margin-left: 20px;">You can be always up to date with our company news!</p>
+    </div>
+ <div class="col-11">
+  <div class="input-group my-5" style="margin-left: 20px;">
+    <input type="email" class="form-control newsl" placeholder="EMAIL" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">SUBSCRIBE</span>
+</div>
+ </div>
+ <div class="col-12 text-start" style="margin-left: 30px;">
+   Useful links
+ </div>
+   <div class="row">
+    <div class="icon" >
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+     
+    </div>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  <div class="col-12 p-2 mt-2 ">
+    <h6 class="text-center m-2"> COPYRIGHT &copy; 2021- Precision - All right reserved </h6>
+
+   </div>
+   <div class="col-12 d-flex justify-content-center">
+     <img src="STATIC/Images/payment.png" alt="" class="mx-auto">
+   </div>
+</section>
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="STATIC/js/index.js"></script>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $('.sub-btn').click(function(){
+      $(this).next('.sub-menu').slideToggle();
+    });
+
+  });
+</script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
