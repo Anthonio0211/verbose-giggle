@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    text-decoration: none;
+    font-family:'Quattrocento', serif; 
+    text-decoration: none !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Quattrocento&display=swap');
+
+:root{
+    --fontbold:'Oswald', sans-serif;
+    --fontnormal:'Quattrocento', serif;
+    --mainclr: #f1f1f1;
+    --sideclr:#3b5998;
+    --tran: all 0.5s ease-in-out;
+    --fw: 700;
+
+}
+body{
+    background-color: var(--mainclr);
+    overflow-x: hidden;
+}
+.cate{
+    margin: 55px 0px 0px 0px ;
+}
+.cate h2{
+    font-family: var(--fontbold);
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: rgb(53, 51, 51);
+    font-weight: 1000;
+    margin-top: 15px;
+}
+aside{
+    height: 100vh !important;  
+    position: sticky;  
+    top: 5%;
+    overflow-y: scroll;
+}
+aside::-webkit-scrollbar{
+    width: 3px;
+    height: 1px !important;
+    
+}
+aside::-webkit-scrollbar-thumb{
+    
+    background-color: whitesmoke ;
+    
+}
+aside::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+}
+aside .categories{
+    width: 100%;
+    margin-top: 50px;
+}
+aside .categories .categories-items{
+    position: relative;
+    cursor: pointer;
+}
+aside .categories .categories-items a{
+    color: black;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: capitalize;   
+    display: block;
+    padding: 5px 30px;
+padding-bottom: 20px;
+border-bottom: 1px solid  rgb(245, 239, 239);
+}
+.categories .categories-items a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+.categories .categories-items a :hover.dropdown{
+    transform: translateY(-50%) rotate(90deg);
+}
+.categories-items .sub-menu .sub-item{
+    font-size: 1.1em;
+}
+.categories .categories-items .sub-menu{
+    background-color: rgb(243, 243, 243);
+    display: none ;
+}
+.categories-buttons {
+    margin: 20px 0px;
+}
+.categories-buttons button{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 7px;
+    border: 1px solid rgb(223, 217, 217);
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-color: white;
+}
+.tags-btn{
+    font-size: 13px !important;
+    padding: 5px 9px;
+    border: 1px solid grey;
+    text-transform: uppercase;
+    line-height: 25px;
+ margin: 10px 5px;
+    white-space: nowrap;
+
+}
+ select{
+    display: block;
+    padding: 9px 7px;
+    border: 1px solid rgb(223, 217, 217);
+    box-sizing: content-box;
+    text-transform: capitalize;
+    color: grey;
+    border-radius: 5px;
+  }
+  select:focus{
+      outline: none;
+  }
+
+  select .opt{
+text-transform: capitalize !important;
+  }
+  
+  .search-bar input{
+   
+      padding: 9px 7px;
+      border: 1px solid rgb(223, 217, 217);
+      border-radius: 5px;
+  }
+  .search-bar input:focus{
+    outline: none;
+}
+.electrical h2{
+    font-family: var(--fontbold);
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: rgb(53, 51, 51);
+    font-weight: 1000;
+    /* margin-top: 20px; */
+}
+#electrical-supplies,#power-tools,#industrial-machines,#safety-supplies,#measuring-tools{
+    display: none;
+}
+
+@media screen and(max-width:375px) {
+    .electrical{
+        margin: 10px auto !important;
+    }
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Quattrocento&display=swap');
+
+:root{
+    --fontbold:'Oswald', sans-serif;
+    --fontnormal:'Quattrocento', serif;
+    --mainclr: #f1f1f1;
+    --sideclr:#3b5998;
+    --tran: all 0.5s ease-in-out;
+    --fw: 700;
+
+}
+
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden !important;
+  }
+  *{
+    color: black;
+  }
+  #product-img img{
+      max-width: 550px;
+      max-height: 600px;
+  }
+
+.single-product .col-6 img{
+padding: 0 ;
+}
+
+.single-product h4{
+margin: 30px 0;
+font-size: 2em;
+font-family: var(--fontnormal);
+font-weight: bold;
+}
+
+.single-product .qty{
+   text-align: center;
+    /* padding: 10px; */
+    width: 70px;
+    height: 35px;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+}
+.qty:focus{
+    outline: none !important;
+}
+.single-product .fa-indent{
+color: red;
+margin-left:10px ;
+font-size: 18px;
+}
+
+
+.small-img-row{
+display: flex;
+justify-content: space-between;
+}
+.small-img-col{
+flex-basis: 24%;
+cursor: pointer;
+}
+.small-img img{
+max-width: 200px;
+      max-height: 200px;
+}
+
+
+#descriptions h1{
+    font-family: var(--fontnormal);
+    font-weight: var(--fw);
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#descriptions{
+    margin: 30px 0px;
+}
+.rating i{
+    color: gold;
+
+}
+#product-info{
+    list-style: none;
+    margin: 20px 0px;
+}
+#product-info li{
+    margin: 5px 0px;
+    color: black;
+    font-family: var(--fontnormal);
+    font-weight: bold;
+}
+#dandr{
+margin-left: 40px
+}
+#dandr h2 span{
+    font-family: var(--fontbold);
+    font-size: .9em;
+    color:  #363636 !important;
+    font-weight: var(--fw);
+}
+.description-text p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 11px;
+    line-height: 1.62857;
+    color: gray !important;
+    
+}
+.description-text{
+    height: fit-content;
+  
+}
+.comment-rating i{
+    color: gold;
+}
+.comment1{
+    border-top: 1px solid #dedede;
+    padding: 20px 0px 30px 0px; 
+    border-bottom:1px solid #dedede;
+}
+#review-page{
+    display: none;
+}
+.related h2{
+    font-family: var(--fontbold);
+    font-weight: (--fw);
+    color: #2b2a2a;
+    font-size: 3em;
+    text-transform: capitalize;
+    margin: 20px 10px;
+    
+}
+.product-links i{
+    color: white !important;
+}
+.cart i{
+    color: white !important;
+}
+
+
+
+@media screen and (max-width:375px) {
+    #dandr h2 span{
+        font-family: var(--fontbold);
+        font-size: .5em;
+        color:  #363636 !important;
+        font-weight: var(--fw);
+    }
+    #dandr{
+        margin-left: 20px
+        }
+}
